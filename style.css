@@ -1,4 +1,6 @@
 body{
+	height: 100%;
+	width: 100%;
     background-color: #3e3d40;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -6,9 +8,8 @@ body{
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    display: flex;
 }
-#baslik1{
+.uasozluk{
     color: rgb(214, 214, 214);
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -17,6 +18,28 @@ body{
     padding: 0;
     display: flex;
     margin: 0 auto;
+}
+.uasozluk h1{
+	font-size: 2.5em;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+.hightlights{
+	width: 20%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+.hightlights h2{
+	font-size: 1.5em;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
 }
 nav
 {
@@ -46,7 +69,7 @@ nav:after
 
 nav ul
 {
-	width: 14em;
+	width: 18em;
 	list-style-type: none;
 	margin: 0;
 	padding: 1em;
@@ -74,7 +97,7 @@ nav a:hover, nav a:focus
 }
 
 /* hovering */
-article, article:after, nav, nav *
+nav, nav *
 {
 	-webkit-transition: all 600ms ease;
 	-moz-transition: all 600ms ease;
@@ -86,49 +109,4 @@ article, article:after, nav, nav *
 nav:hover
 {
 	left: 0;
-}
-
-nav:hover ~ article
-{
-	-webkit-transform: translateX(16em) perspective(600px) rotateY(10deg);
-	-moz-transform: translateX(16em) perspective(600px) rotateY(10deg);
-	-ms-transform: translateX(16em) perspective(600px) rotateY(10deg);
-	-o-transform: translateX(16em) perspective(600px) rotateY(10deg);
-	transform: translateX(16em) perspective(600px) rotateY(10deg);
-}
-
-nav:hover ~ article:after
-{
-	left: 60%;
-}
-
-/* typography */
-footer
-{
-	margin-top: 2em;
-	border-top: 1px dotted #999;
-}
-
-h1
-{
-	font-size: 2.5em;
-	font-weight: normal;
-	margin: 0 0 0.2em 0;
-}
-
-p
-{
-	line-height: 1.3em;
-	margin: 0 0 1.5m 0;
-}
-
-.lead {
-  font-weight:100;
-  font-size:21px;
-}
-
-picture {
-  width:100%;
-  height:auto;
-  display:block;
 }
