@@ -12,6 +12,19 @@
 </head>
 <body>
 
+    <div class="cont-premium">
+        <div class="premium">
+            <h1>Premium Üyelik Satın Al</h1>
+            <p>Üyeliklerinizin süresi dolmuş veya üyeliklerinizin süresi dolmadan önce üyeliklerinizi yenilemek istiyorsanız aşağıdaki butonlardan birini seçebilirsiniz.</p>
+            <div class="premium-btn">
+                <button class="btn-premium">1 Ay</button>
+                <button class="btn-premium">3 Ay</button>
+                <button class="btn-premium">6 Ay</button>
+                <button class="btn-premium">1 Yıl</button>
+            </div>
+        </div>
+    </div>
+
     <nav>
         <ul>
             <li><a href="index.html">Ana Sayfa</a></li>
@@ -43,7 +56,7 @@
                                    <span class="set_card_number">0000 0000 0000 0000</span>
                                 </div>
                                 <div class="card_cvv">
-                                   <small>Valid upto</small>
+                                   <small>CVV</small>
                                    <span class="user_card_cvv">MM/YYYY</span>
                                </div>
                         
@@ -65,7 +78,7 @@
                     </div>
                     <div class="input-div">
                         <div class="input-text">
-                           <input type="text" onkeyup="usercardcvv(this.value)" placeholder="MM/YYYY" data-slots="MY" require>
+                           <input type="text" onkeyup="usercardcvv(this.value)" placeholder="AY/YYYY" data-slots="MY" require>
                            <span>Valid upto</span>
                         </div>
                         <div class="input-text ">
@@ -82,5 +95,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

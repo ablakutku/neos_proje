@@ -248,3 +248,23 @@ input[type="text"]{
             display: none;
     }
 }
+#user_name_input{
+    text-transform: uppercase;
+}
+
+.cont-premium{
+    margin-left: 40%;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+    border: 2px solid white;
+    height: 40%;
+    width: 40%;
+}
+.cont-premium button{
+    padding: 10px;
+    background-color: #4597ff;
+    border: none;
+    cursor: pointer;
+
+}

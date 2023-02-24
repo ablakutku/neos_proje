@@ -83,3 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     //  validate_inputs.classList.remove('warning');
     //  if(validate_inputs has)
+
+
+    function myFunction(){
+        var x = document.getElementById("user_card_number_input");
+        x.value = x.value.replace(/\s/g, '').replace(/(\d{4})/g, '$1 ').trim();
+        
+    }
