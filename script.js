@@ -85,8 +85,26 @@ document.addEventListener('DOMContentLoaded', () => {
     //  if(validate_inputs has)
 
 
+    myFunction();
+
     function myFunction(){
-        var x = document.getElementById("user_card_number_input");
-        x.value = x.value.replace(/\s/g, '').replace(/(\d{4})/g, '$1 ').trim();
-        
+        Swal.fire({
+  title: 'Premium üyelik avantajları;',
+  text: `
+  Premium üyelik için 1 ay ödeme yapmanız gerekmektedir.
+  Üye profilinizin yanında Premium üyelik işaretiniz olacaktır.
+  Profil resminize artık GIF resimlerini ekleyebilirsiniz.
+  Özel mesajlarınızı artık 100 karakterden 500 karaktere kadar uzatabilirsiniz.
+  `,
+   width: 1000,
+  padding: '3em',
+  color: '#716add',
+  background: '#fff url(/images/trees.png)',
+  backdrop: `
+    rgba(0,0,123,0.4)
+    url("funny.gif")
+    left top
+    no-repeat
+  `
+})
     }
