@@ -96,13 +96,13 @@ document.addEventListener('DOMContentLoaded', () => {
   Profil resminize artık GIF resimlerini ekleyebilirsiniz.
   Özel mesajlarınızı artık 100 karakterden 500 karaktere kadar uzatabilirsiniz.
   `,
+  
    width: 1000,
   padding: '3em',
   color: '#716add',
-  background: '#fff url(/images/trees.png)',
   backdrop: `
     rgba(0,0,123,0.4)
-    url("funny.gif")
+    url("yB.gif")
     left top
     no-repeat
   `
